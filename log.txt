@@ -1,0 +1,54 @@
+ # UNSUPERVISED DISTANCE LEARNING METHODS FRAMEWORK #
+
+
+ - GENERAL INFORMATION -
+ --------------------------------------
+ Task:             FUSION
+ Method:           RDPAC
+ Dataset Size:     11788
+ Image List File:  /home/junior/pyCascade/dataset/cub200/cub200_lists.txt
+ Image Class File: /home/junior/pyCascade/dataset/cub200/cub200_classes.txt
+ Input Files:
+                   (1) /home/junior/pyCascade/dataset/cub200/ranked_lists/swimtf.txt
+                   (2) /home/junior/pyCascade/dataset/cub200/ranked_lists/vit-b16.txt
+ Input Format:     RK NUM  (automatically detected)
+ Output File:      /home/junior/pyCascade/output/cub200/770b3d1e-573a-4f23-8b13-cdee4212be2f/rk_fusions/swimtf+vit-b16
+ Output Format:    RK NUM
+ --------------------------------------
+
+
+ - METHOD PARAMETERS -
+ --------------------------------------
+ PARAM_RDPAC_K_END = 100
+ PARAM_RDPAC_K_INC = 1
+ PARAM_RDPAC_K_START = 1
+ PARAM_RDPAC_L = 1750
+ PARAM_RDPAC_L_MULT = 2
+ PARAM_RDPAC_P = 0.60
+ PARAM_RDPAC_PL = 0.99
+ --------------------------------------
+
+
+ - EVALUATION RESULTS -
+ --------------------------------------
+ * Efficiency:
+	 Total Time of the Algorithm Execution: 5240.3638 s
+
+ * Effectiveness:
+	 P@4		0.8606
+	 P@5		0.8502
+	 P@10		0.8233
+	 P@15		0.8126
+	 P@20		0.8054
+	 P@30		0.7948
+	 P@50		0.7684
+	 P@100		0.4933
+	 Recall@4	0.0586
+	 Recall@5	0.0723
+	 Recall@10	0.1401
+	 Recall@20	0.2740
+	 Recall@40	0.5330
+	 MAP		0.7675
+ --------------------------------------
+
+ Log generated at 2024/6/5 20:36:33
